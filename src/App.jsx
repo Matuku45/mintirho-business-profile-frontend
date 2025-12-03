@@ -19,32 +19,30 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
-      <div className="App-container"> {/* A container div is needed if you want a class name */}
-        
-        {/* Header */}
-        <Header /> 
-        
-        {/* Main content */}
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/company-profile" element={<CompanyProfile />} />
-            <Route path="/management" element={<Management />} />
-            <Route path="/products-services" element={<ProductsServices />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/equipment" element={<Equipment />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
+    <div className="flex flex-col min-h-screen">
+      {/* Header */}
+      <Header />
 
-        {/* Footer */}
-        <Footer />
-      </div> 
-    </Router>
+      {/* Main content */}
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/company-profile" element={<CompanyProfile />} />
+          <Route path="/management" element={<Management />} />
+          <Route path="/products-services" element={<ProductsServices />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/equipment" element={<Equipment />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </div>
   );
 }
+
 
 export default App;
