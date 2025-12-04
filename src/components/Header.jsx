@@ -9,13 +9,13 @@ Mintirho </Link>
 
     {/* Navigation */}
     <nav className="hidden md:flex space-x-6 text-lg font-medium">
-      <Link to="/about" className="hover:text-yellow-400 transition duration-300">About</Link>
       <Link to="/company-profile" className="hover:text-yellow-400 transition duration-300">Company Profile</Link>
+      <Link to="/products-services" className="hover:text-yellow-400 transition duration-300">Products and services</Link>
+      <Link to="/project" className="hover:text-yellow-400 transition duration-300">Projects</Link>
       <Link to="/management" className="hover:text-yellow-400 transition duration-300">Management</Link>
-      <Link to="/products-services" className="hover:text-yellow-400 transition duration-300">Products & Services</Link>
-      <Link to="/projects" className="hover:text-yellow-400 transition duration-300">Projects</Link>
-      <Link to="/equipment" className="hover:text-yellow-400 transition duration-300">Equipment</Link>
       <Link to="/gallery" className="hover:text-yellow-400 transition duration-300">Gallery</Link>
+      <Link to="/equipment" className="hover:text-yellow-400 transition duration-300">Equipment</Link>
+      <Link to="/about" className="hover:text-yellow-400 transition duration-300">About Us</Link>
       <Link to="/contact" className="hover:text-yellow-400 transition duration-300">Contact</Link>
     </nav>
 
