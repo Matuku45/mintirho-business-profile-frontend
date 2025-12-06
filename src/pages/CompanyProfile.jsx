@@ -136,29 +136,6 @@ const CompanyProfile = () => {
           </motion.div>
         </div>
 
-        {/* Ownership */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-blue-600 flex items-center justify-center gap-2">
-            <MdPeople className="text-yellow-400 text-4xl" /> Ownership
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
-            {ownership.map((owner, idx) => (
-              <motion.div
-                key={idx}
-                whileHover={{ scale: 1.05 }}
-                className="bg-gradient-to-r from-blue-400 via-pink-500 to-yellow-400 animate-gradient-x p-1 rounded-3xl"
-              >
-                <div className="bg-gray-800 rounded-2xl p-6 text-gray-100 shadow-xl">
-                  <h3 className="text-xl font-bold mb-2">{owner.name}</h3>
-                  <p><strong>ID:</strong> {owner.identity}</p>
-                  <p><strong>Race:</strong> {owner.race}</p>
-                  <p><strong>Gender:</strong> {owner.gender}</p>
-                  <p><strong>Ownership:</strong> {owner.ownership}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
 
         {/* Management Team */}
         <div className="mb-12">
